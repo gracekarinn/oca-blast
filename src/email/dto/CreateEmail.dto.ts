@@ -11,4 +11,7 @@ export class CreateEmailDto {
 
   @IsDate()
   createdAt: Date = new Date();
+
+  @IsDate()
+  updatedAt: Date = new Date();
 }
