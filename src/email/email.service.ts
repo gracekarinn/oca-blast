@@ -16,4 +16,16 @@ export class EmailService {
   getEmail() {
     return this.emailModel.find();
   }
+
+  getEmailById(id: string) {
+    return this.emailModel.findById(id);
+  }
+
+  updateEmail(id: string, createEmailDto: CreateEmailDto) {
+    return this.emailModel.findByIdAndUpdate(id, createEmailDto, { new: true });
+  }
+
+  deleteEmail(id: string) {
+    return this.emailModel.findByIdAndDelete(id);
+  }
 }
