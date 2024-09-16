@@ -13,7 +13,7 @@ import { EmailModule } from './email/email.module';
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
-        uri: configService.get<string>('DB_URI'),
+        uri: configService.get<string>('URI'),
       }),
       inject: [ConfigService],
     }),
