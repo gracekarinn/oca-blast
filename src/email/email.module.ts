@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Email, EmailSchema } from 'src/schemas/Email.schema';
+import { Email, EmailSchema } from '../schemas/Email.schema';
 import { EmailService } from './email.service';
 import { EmailController } from './email.controller';
 
