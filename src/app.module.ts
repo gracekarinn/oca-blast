@@ -8,12 +8,12 @@ import { EmailModule } from './email/email.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true, // Make ConfigModule available everywhere
+      isGlobal: true,
     }),
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
-        uri: configService.get<string>('URI'),
+        uri: configService.get<string>('DB_URI'),
       }),
       inject: [ConfigService],
     }),
