@@ -1,7 +1,7 @@
 {
   "version": 2,
   "env": {
-    "URI": "@URI"
+    "URI": "URI"
   },
   "builds": [
     {
