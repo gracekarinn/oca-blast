@@ -3,10 +3,6 @@
   "env": {
     "MONGO_URI": "URI"
   },
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/main.js"
-  },
   "routes": [
     {
       "src": "/(.*)",
