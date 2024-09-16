@@ -8,7 +8,7 @@ import { EmailModule } from './email/email.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true,
+      isGlobal: true, // Make ConfigModule available everywhere
     }),
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
